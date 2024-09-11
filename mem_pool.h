@@ -33,7 +33,6 @@ typedef struct mem_page_s {
 } mem_page_t;
 
 typedef struct mem_pool_s {
-    // TODO 增加一个总的malloc size，一般来说盒子是150MB左右可用，可限制下max size不要超过盒子的80%，比如100MB，或者超过了50%，我们可以开始做真正的free
     int cur_size;
     int max_size;
     int top_size;
